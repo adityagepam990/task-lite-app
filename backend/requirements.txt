@@ -1,0 +1,15 @@
+# TaskLite backend dependencies.
+#
+# Everything here is pure-Python or ships wheels for all major platforms, so the
+# backend installs and runs locally with no external services (no Postgres, no
+# Redis, no message broker). Persistence is a single SQLite file on disk.
+
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0     # [standard] pulls in websockets, needed for /ws
+sqlalchemy>=2.0.36
+pydantic>=2.9.0
+pydantic-settings>=2.6.0      # provides TomlConfigSettingsSource
+
+# --- development / testing only -------------------------------------------
+pytest>=8.3.0
+httpx>=0.27.0                 # drives fastapi.testclient.TestClient
