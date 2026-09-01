@@ -1,0 +1,416 @@
+{
+  "meta": {
+    "generatedAt": "2026-09-01T05:33:51.366Z",
+    "rangeLabel": "all",
+    "agents": [
+      "claude"
+    ],
+    "projectFilter": "all",
+    "totals": {
+      "sessions": 1,
+      "durationMs": 67260074,
+      "turns": 53,
+      "files": 46,
+      "netLines": 3906,
+      "toolCallsTotal": 102,
+      "toolSuccessRate": 96.1,
+      "totalCostUSD": 7.998194600000001,
+      "cacheReadCostUSD": 3.1046646,
+      "pricedSessions": 1
+    },
+    "unpricedModels": [],
+    "coverage": [
+      {
+        "agentName": "claude",
+        "total": 1,
+        "priced": 1,
+        "withLog": 1
+      }
+    ],
+    "userEmail": "aditya_gollapalli@epam.com",
+    "periodStart": "2026-08-31T10:24:22.515Z",
+    "periodEnd": "2026-09-01T05:05:22.589Z"
+  },
+  "sessions": [
+    {
+      "sessionId": "4811c66c-f704-4f34-891d-fc430c3ec048",
+      "agentName": "claude",
+      "provider": "ai-run-sso",
+      "title": "/model fable",
+      "project": "C:\\Users\\AdityaGollapalli\\Downloads\\task-lite\\task-lite-app",
+      "branch": "feature/build_v1",
+      "startTime": 1788171862515,
+      "durationMs": 67260074,
+      "turns": 53,
+      "fileOps": 46,
+      "linesAdded": 3933,
+      "linesRemoved": 27,
+      "linesModified": 0,
+      "netLines": 3906,
+      "filesChanged": 43,
+      "filesWritten": 43,
+      "filesEdited": 8,
+      "toolCallsTotal": 102,
+      "toolCallsSuccess": 98,
+      "toolCallsFailure": 4,
+      "models": [
+        "claude-opus-5",
+        "claude-sonnet-5",
+        "<synthetic>"
+      ],
+      "languages": [
+        "python",
+        "markdown",
+        "json"
+      ],
+      "tools": [
+        {
+          "toolName": "Write",
+          "totalCalls": 45,
+          "successCount": 45,
+          "failureCount": 0,
+          "successRate": 100
+        },
+        {
+          "toolName": "Bash",
+          "totalCalls": 23,
+          "successCount": 21,
+          "failureCount": 2,
+          "successRate": 91.30434782608695
+        },
+        {
+          "toolName": "Edit",
+          "totalCalls": 16,
+          "successCount": 16,
+          "failureCount": 0,
+          "successRate": 100
+        },
+        {
+          "toolName": "TaskCreate",
+          "totalCalls": 8,
+          "successCount": 8,
+          "failureCount": 0,
+          "successRate": 100
+        },
+        {
+          "toolName": "TaskUpdate",
+          "totalCalls": 4,
+          "successCount": 4,
+          "failureCount": 0,
+          "successRate": 100
+        },
+        {
+          "toolName": "Read",
+          "totalCalls": 3,
+          "successCount": 3,
+          "failureCount": 0,
+          "successRate": 100
+        },
+        {
+          "toolName": "AskUserQuestion",
+          "totalCalls": 2,
+          "successCount": 1,
+          "failureCount": 1,
+          "successRate": 50
+        },
+        {
+          "toolName": "TaskStop",
+          "totalCalls": 1,
+          "successCount": 0,
+          "failureCount": 1,
+          "successRate": 0
+        }
+      ],
+      "tokens": {
+        "input": 19422,
+        "output": 110232,
+        "cacheRead": 8767736,
+        "cacheCreation": 332051,
+        "cacheCreation1h": 332051,
+        "total": 9229441
+      },
+      "costUSD": 7.998194600000001,
+      "cacheReadCostUSD": 3.1046646,
+      "perModelCost": [
+        {
+          "model": "claude-opus-5",
+          "tokens": {
+            "input": 5153,
+            "output": 67790,
+            "cacheRead": 2371719,
+            "cacheCreation": 125318,
+            "cacheCreation1h": 125318,
+            "total": 2569980
+          },
+          "costUSD": 4.1595545000000005,
+          "unpriced": false
+        },
+        {
+          "model": "claude-sonnet-5",
+          "tokens": {
+            "input": 14269,
+            "output": 42442,
+            "cacheRead": 6396017,
+            "cacheCreation": 206733,
+            "cacheCreation1h": 206733,
+            "total": 6659461
+          },
+          "costUSD": 3.8386401,
+          "unpriced": false
+        }
+      ],
+      "hadLog": true,
+      "costSeries": [
+        {
+          "t": 1788171926562,
+          "cost": 0.481705,
+          "tokens": 49174
+        },
+        {
+          "t": 1788171975890,
+          "cost": 0.632721,
+          "tokens": 151259
+        },
+        {
+          "t": 1788172221771,
+          "cost": 1.0239355,
+          "tokens": 323546
+        },
+        {
+          "t": 1788172276484,
+          "cost": 1.2679535,
+          "tokens": 456001
+        },
+        {
+          "t": 1788172461451,
+          "cost": 1.522112,
+          "tokens": 600831
+        },
+        {
+          "t": 1788172576276,
+          "cost": 1.781133,
+          "tokens": 757590
+        },
+        {
+          "t": 1788172683392,
+          "cost": 2.23569,
+          "tokens": 1017810
+        },
+        {
+          "t": 1788172723341,
+          "cost": 2.487672,
+          "tokens": 1206136
+        },
+        {
+          "t": 1788172811588,
+          "cost": 2.8406825,
+          "tokens": 1409057
+        },
+        {
+          "t": 1788172843839,
+          "cost": 3.0771545,
+          "tokens": 1621381
+        },
+        {
+          "t": 1788172907565,
+          "cost": 3.4675205,
+          "tokens": 1956890
+        },
+        {
+          "t": 1788172964122,
+          "cost": 3.782132,
+          "tokens": 2195380
+        },
+        {
+          "t": 1788173018279,
+          "cost": 4.0637565,
+          "tokens": 2443960
+        },
+        {
+          "t": 1788238798225,
+          "cost": 4.9235855,
+          "tokens": 2697030
+        },
+        {
+          "t": 1788238841869,
+          "cost": 5.056373,
+          "tokens": 3080561
+        },
+        {
+          "t": 1788238859855,
+          "cost": 5.1474764,
+          "tokens": 3338880
+        },
+        {
+          "t": 1788238879260,
+          "cost": 5.2456079,
+          "tokens": 3600217
+        },
+        {
+          "t": 1788238902450,
+          "cost": 5.3520125,
+          "tokens": 3866724
+        },
+        {
+          "t": 1788238934086,
+          "cost": 5.5163738,
+          "tokens": 4277373
+        },
+        {
+          "t": 1788238992912,
+          "cost": 5.6162915,
+          "tokens": 4554355
+        },
+        {
+          "t": 1788239007277,
+          "cost": 5.7100493,
+          "tokens": 4833140
+        },
+        {
+          "t": 1788239043471,
+          "cost": 5.8365917,
+          "tokens": 5115629
+        },
+        {
+          "t": 1788239117159,
+          "cost": 6.1727738,
+          "tokens": 5565151
+        },
+        {
+          "t": 1788239290938,
+          "cost": 6.3737486,
+          "tokens": 5799260
+        },
+        {
+          "t": 1788239590770,
+          "cost": 6.5111291,
+          "tokens": 5966119
+        },
+        {
+          "t": 1788239626923,
+          "cost": 6.5697905,
+          "tokens": 6134283
+        },
+        {
+          "t": 1788239959482,
+          "cost": 6.665732,
+          "tokens": 6389985
+        },
+        {
+          "t": 1788239972384,
+          "cost": 6.7309283,
+          "tokens": 6563338
+        },
+        {
+          "t": 1788239985031,
+          "cost": 6.7975355,
+          "tokens": 6738753
+        },
+        {
+          "t": 1788240377084,
+          "cost": 6.8670704,
+          "tokens": 6916654
+        },
+        {
+          "t": 1788240396587,
+          "cost": 6.9756746,
+          "tokens": 7189143
+        },
+        {
+          "t": 1788240405954,
+          "cost": 7.0383431,
+          "tokens": 7372549
+        },
+        {
+          "t": 1788240422268,
+          "cost": 7.1066351,
+          "tokens": 7557486
+        },
+        {
+          "t": 1788240432591,
+          "cost": 7.1746355,
+          "tokens": 7744027
+        },
+        {
+          "t": 1788240509935,
+          "cost": 7.392971,
+          "tokens": 8039140
+        },
+        {
+          "t": 1788240523106,
+          "cost": 7.4766314,
+          "tokens": 8242909
+        },
+        {
+          "t": 1788240547076,
+          "cost": 7.6048781,
+          "tokens": 8455960
+        },
+        {
+          "t": 1788240557321,
+          "cost": 7.6805057,
+          "tokens": 8670550
+        },
+        {
+          "t": 1788240636609,
+          "cost": 7.8363713,
+          "tokens": 9000704
+        },
+        {
+          "t": 1788240712497,
+          "cost": 7.9981946,
+          "tokens": 9229441
+        }
+      ],
+      "dispatches": [
+        {
+          "kind": "command",
+          "name": "clear",
+          "start": 1788171900147,
+          "durationMs": 0
+        },
+        {
+          "kind": "command",
+          "name": "model",
+          "start": 1788171908401,
+          "durationMs": 0
+        },
+        {
+          "kind": "command",
+          "name": "effort",
+          "start": 1788171913644,
+          "durationMs": 0
+        },
+        {
+          "kind": "command",
+          "name": "model",
+          "start": 1788238766063,
+          "durationMs": 0
+        },
+        {
+          "kind": "command",
+          "name": "effort",
+          "start": 1788238773499,
+          "durationMs": 0
+        }
+      ],
+      "skillInvocations": [],
+      "agentInvocations": [],
+      "commandInvocations": [
+        {
+          "name": "model",
+          "totalCalls": 4,
+          "successCount": 4,
+          "failureCount": 0
+        },
+        {
+          "name": "effort",
+          "totalCalls": 4,
+          "successCount": 4,
+          "failureCount": 0
+        }
+      ],
+      "sessionSource": "Pure chat"
+    }
+  ]
+}
