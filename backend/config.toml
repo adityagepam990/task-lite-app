@@ -1,0 +1,41 @@
+# TaskLite backend configuration.
+#
+# This file is the "simple file-based configuration" for the app -- edit it and
+# restart the server. Every value is optional; anything omitted falls back to the
+# default defined in app/config.py.
+#
+# Precedence (highest wins):
+#   environment variables  >  .env  >  this file  >  code defaults
+#
+# So you can commit sane defaults here and still override per-machine with a
+# TASKLITE_-prefixed env var, e.g. TASKLITE_PORT=9000.
+
+[app]
+name = "TaskLite API"
+# Bump when you make a breaking API change.
+version = "1.0.0"
+# Set false in anything resembling production: it hides internal error details
+# from clients and disables the auto-reloading docs niceties.
+debug = true
+
+[server]
+host = "127.0.0.1"
+port = 8000
+
+[database]
+# Relative paths resolve against the backend/ directory, so the default puts the
+# SQLite file at backend/tasklite.db. Use ":memory:" for an ephemeral database.
+path = "tasklite.db"
+# Log every SQL statement. Noisy but useful when debugging ordering logic.
+echo_sql = false
+
+[cors]
+# The Expo dev server and Metro bundler use a handful of ports/hosts, and on a
+# physical device the origin is your LAN IP. For a local-only personal app the
+# pragmatic choice is to allow all origins; tighten this if you ever expose it.
+allow_origins = ["*"]
+
+[seed]
+# On first run (empty database) create three starter boards with default
+# columns so the app has something to show. Set false to start empty.
+enabled = true
